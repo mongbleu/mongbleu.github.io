@@ -8,11 +8,11 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Yujeong Jeong"
 title_separator          : "-"
 name                     : &name "Yujeong Jeong"
-description              : &description "Researcher, climate technology & AI-applied environmental modeling"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Researcher, Environmental AI modeler & Data Analyst"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://mongbleu.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,7 +24,7 @@ repository               : "academicpages/academicpages.github.io"
 author:
   avatar           : "profile.png"
   name             : "Yujeong Jeong"
-  bio              : "GHG spatial modeling · AI-Physic Hybrid modeling"
+  bio              : "Knowledge-Guided AI Modeling · GHG Spatial Modeling · Climate Technology Data Analysis"
   location         : "Seoul, Republic of Korea"
   employer         : "National Institute of Green Technology"
   email            : "deepbluelearning98@gmail.com / bluelearning@nigt.re.kr"
