@@ -12,85 +12,94 @@ site_theme               : "air" # The available themes options are "default", "
 title                    : "Yujeong Jeong"
 title_separator          : "-"
 name                     : &name "Yujeong Jeong"
-description              : &description "Researcher, Environmental AI modeler & Data Analyst"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://mongbleu.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+description              : &description "Knowledge-guided AI for environmental modeling — differentiable hybrid models, GHG spatial modeling, and climate technology cooperation analysis. Models, code, and data by Yujeong Jeong."
+url                      : https://mongbleu.github.io # The base hostname & protocol for your site
+baseurl                  : "" # the subpath of your site, e.g. "/blog" — must stay empty for a user site
+repository               : "mongbleu/mongbleu.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
+# NOTE: YAML takes the LAST value when a key appears twice. Each key below appears
+#       exactly once — do not re-add the duplicate blocks that shipped with the template.
+#       Format matters: github / linkedin / bluesky take a USERNAME (the template builds
+#       the URL), while googlescholar / orcid / researchgate take a FULL URL.
 author:
   avatar           : "profile.png"
   name             : "Yujeong Jeong"
-  bio              : "Knowledge-Guided AI Modeling · GHG Spatial Modeling · Climate Technology Data Analysis"
+  pronouns         :
+  bio              : "Knowledge-guided AI for environmental modeling · GHG spatial modeling · Climate technology cooperation"
   location         : "Seoul, Republic of Korea"
   employer         : "National Institute of Green Technology"
-  email            : "deepbluelearning98@gmail.com / bluelearning@nigt.re.kr"
-  github           : "mongbleu"
-  googlescholar    : "https://scholar.google.com/citations?hl=ko&user=KSyS2SoAAAAJ"
-  orcid            : "https://orcid.org/0009-0001-4462-0266"
-  linkedin         : "https://www.linkedin.com/in/yujeong-jeong-b81699294"
+  uri              :
+  email            : "deepbluelearning98@gmail.com"        # personal — stays valid after leaving NIGT
+  email_work       : "bluelearning@nigt.re.kr"             # institutional (custom field, see _includes/author-profile.html)
+  email_work_label : "NIGT email"
 
-  # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?hl=ko&user=KSyS2SoAAAAJ"
-  inspire-hep      : # URL
-  impactstory      : # URL
+  # Academic profiles (FULL URLs)
+  academia         :
+  arxiv            :
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=KSyS2SoAAAAJ"
+  inspire-hep      :
+  impactstory      :
   orcid            : "https://orcid.org/0009-0001-4462-0266"
-  semantic         : # URL
-  ssrn             : # URL
-  pubmed           : # URL
+  semantic         :
+  ssrn             :
+  pubmed           :
   researchgate     : "https://www.researchgate.net/profile/Yujeong-Jeong-8/research"
-  scopus           : # URL
-  zotero           : # URL
+  scopus           :
+  zotero           :
 
+  # Repositories and software development (USERNAMES)
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  github           : "mongbleu"
+  kaggle           :
+  stackoverflow    :
 
-  # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
-  github           : "academicpages"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
-
-  # Social media
-  artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : # Username
-  lastfm           : # Username
-  linkedin         : # Username
+  # Social media (USERNAMES unless noted)
+  artstation       :
+  bluesky          :
+  facebook         :
+  flickr           :
+  foursquare       :
+  goodreads        :
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         : "yujeong-jeong-b81699294"
   mastodon         : # URL
   medium           : # URL
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
+  pinterest        :
+  soundcloud       :
+  steam            :
   telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
+  tumblr           :
+  twitter          :
+  vine             :
+  weibo            :
+  wikipedia        :
+  xing             :
+  youtube          :
+  zhihu            :
 
-# Publication Category - The following the list of publication categories and their headings
+# Publication Category - headings on /publications/, rendered in the order listed here.
+# Each _publications/*.md file selects one of these keys via its `category:` field.
 publication_category:
-  books:
-    title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Peer-reviewed Journal Articles'
+  underreview:
+    title: 'Manuscripts Under Review'
+  inprep:
+    title: 'Manuscripts in Preparation'
   conferences:
-    title: 'Conference Papers'
+    title: 'Conference Presentations'
+  patents:
+    title: 'Patents'
+  reports:
+    title: 'Policy Briefs &amp; Reports'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -144,8 +153,8 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "/images/profile.png"  # link preview image when the URL is pasted into email/Slack
+og_description           : *description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -156,7 +165,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               : false # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
 
@@ -222,16 +231,20 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  # Models & data — each entry is one model/dataset/platform with its own documentation page.
+  # This is the collection that merges the "personal site" and the "model docs site".
+  models:
+    output: true
+    permalink: /models/:path/
+  # Kept defined but currently unused (no files, not in the nav). Re-enable by adding
+  # files to _talks/ or _teaching/ and restoring the nav entry in _data/navigation.yml.
+  talks:
     output: true
     permalink: /:collection/:path/
-  talks:
+  teaching:
     output: true
     permalink: /:collection/:path/
 
@@ -274,15 +287,15 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _models
   - scope:
       path: ""
-      type: portfolio
+      type: models
     values:
       layout: single
       author_profile: true
       share: true
-      comment: true
+      comments: false
   # _talks
   - scope:
       path: ""
@@ -303,7 +316,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

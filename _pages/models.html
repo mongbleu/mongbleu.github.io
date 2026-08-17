@@ -1,0 +1,18 @@
+---
+layout: archive
+title: "Models & Data"
+permalink: /models/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>Everything I build gets released. Each entry below has its own page with what the model does,
+what goes in and comes out, how to run it, and where the code, trained weights, or deployed
+platform live. Papers that use these models are on the
+<a href="{{ base_path }}/publications/">Publications</a> page.</p>
+
+{% assign models = site.models | sort: 'date' | reverse %}
+{% for post in models %}
+  {% include archive-single.html %}
+{% endfor %}

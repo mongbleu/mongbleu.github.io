@@ -36,6 +36,10 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
+      <!-- Local addition: second (institutional) email address -->
+      {% if author.email_work %}
+        <li><a href="mailto:{{ author.email_work }}"><i class="fas fa-fw fa-envelope-open-text icon-pad-right" aria-hidden="true"></i>{{ author.email_work_label | default: "Work email" }}</a></li>
+      {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
       {% if author.academia %}
